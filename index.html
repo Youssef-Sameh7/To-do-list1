@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TaskFlow - To Do List</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><div class="page">
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-content">
+
+            <div>
+                <h1>Task<span>Flow</span></h1>
+                <p>Organize your tasks and manage your deadlines.</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="container">
+
+        <!-- Add Task -->
+        <section class="add-task">
+
+            <h2>Add a New Task</h2>
+
+            <p class="subtitle">
+                Create a task and choose its deadline.
+            </p>
+
+            <form id="taskForm">
+
+                <div class="input-group">
+
+                    <label for="taskName">
+                        Task Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskName"
+                        placeholder="Enter your task..."
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="taskDate">
+                        Due Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="taskDate"
+                    >
+
+                </div>
+
+
+                <button type="submit" class="add-button">
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Tasks -->
+        <section class="tasks-section">
+
+            <div class="tasks-top">
+
+                <div>
+
+                    <h2>Your Tasks</h2>
+
+                    <p id="taskCount">
+                        0 Tasks
+                    </p>
+
+                </div>
+
+
+                <select id="filter">
+
+                    <option value="all">
+                        All Tasks
+                    </option>
+
+                    <option value="pending">
+                        Pending
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                    <option value="overdue">
+                        Overdue
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Tasks will appear here -->
+
+            <div id="tasksList"></div>
+
+
+            <!-- Empty message -->
+
+            <div id="emptyMessage" class="empty">
+
+                <div class="empty-icon">
+                    ✓
+                </div>
+
+                <h3>No tasks yet</h3>
+
+                <p>
+                    Add your first task to get started.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 TaskFlow. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body></html>
